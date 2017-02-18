@@ -10,15 +10,17 @@ public class LaserDotController : MonoBehaviour {
 	public Vector3 laserSize;
 	GameObject playerObject;
 	GameObject laserBeamObject;
+	GameObject laserImpactObject;
 	public Vector3 lastPosition = Vector3.zero;
 	// Use this for initialization
 	void Start () {
 		//Cursor.lockState = CursorLockMode.Locked;
 		//Cursor.visible = false;
 		batteryLevel = 100;
-		laserSize = this.transform.localScale;
+		//laserSize = this.transform.localScale;
 		playerObject = GameObject.FindGameObjectWithTag("Player");
 		laserBeamObject = GameObject.FindGameObjectWithTag("LaserBeam");
+		laserImpactObject = GameObject.FindGameObjectWithTag("LaserImpact");
 	}
 	
 	// Update is called once per frame
@@ -26,16 +28,18 @@ public class LaserDotController : MonoBehaviour {
 		if (Input.GetMouseButton(0) && batteryLevel >= 0)
 		{
 			laserActivated = true;
+			laserImpactObject.active = true;
 			laserBeamObject.GetComponent<Renderer>().enabled = true;
 			batteryLevel--;
 			//Debug.Log("Battery Level: " + batteryLevel);
-			this.transform.localScale = Vector3.one/5;
+			//this.transform.localScale = Vector3.one/5;
 			
 		}
 		else {
 			laserActivated = false;
+			laserImpactObject.active = false;
 			laserBeamObject.GetComponent<Renderer>().enabled = false;
-			this.transform.localScale = laserSize;
+			//this.transform.localScale = laserSize;
 			
 		}
 		//Debug.Log("Battery level: " + batteryLevel);

@@ -9,6 +9,7 @@ TagManager:
   - LaserRange
   - PlayerHitBox
   - LaserBeam
+  - LaserImpact
   layers:
   - Default
   - TransparentFX
