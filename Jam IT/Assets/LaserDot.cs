@@ -7,11 +7,13 @@ public class LaserDot : MonoBehaviour {
 	public float verticalSpeed = 1f;
 	public bool laserActivated = false;
 	public int batteryLevel;
+	public Vector3 laserSize;
 	// Use this for initialization
 	void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 		batteryLevel = 100;
+		laserSize = this.transform.localScale;
 	}
 	
 	// Update is called once per frame
@@ -19,12 +21,12 @@ public class LaserDot : MonoBehaviour {
 		if (Input.GetMouseButton(0))
 		{
 			laserActivated = true;
+			batteryLevel--;
+			this.transform.localScale = Vector3.one;
 		}
 		else {
 			laserActivated = false;
-		}
-		if (laserActivated == true) {
-			batteryLevel--;
+			this.transform.localScale = laserSize;
 		}
 		//Debug.Log("Battery level: " + batteryLevel);
 		var playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
