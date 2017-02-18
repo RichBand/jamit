@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserDot : MonoBehaviour {
+public class LaserDotController : MonoBehaviour {
 	public float horizontalSpeed = 1f;
 	public float verticalSpeed = 1f;
 	public bool laserActivated = false;

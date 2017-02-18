@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\LaserBeam.cs" />
-     <Compile Include="Assets\Scripts\LaserDot.cs" />
+     <Compile Include="Assets\Scripts\LaserDotController.cs" />
      <Compile Include="Assets\Scripts\Nerd.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Test.cs" />
