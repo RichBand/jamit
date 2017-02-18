@@ -83,6 +83,7 @@
 'Assets/Scripts/Nerd.cs'
 'Assets/Scripts/Player.cs'
 'Assets/Scripts/Test.cs'
+'Assets/Scripts/layerMask.cs'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.dll'

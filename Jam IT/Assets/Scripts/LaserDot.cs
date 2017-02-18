@@ -56,11 +56,11 @@ public class LaserDot : MonoBehaviour {
 		//float distance = Vector3.Distance(this.transform.position, playerPosition);//diff.magnitude;
 		//Debug.Log(distance);
 		
-		if (distance <= 50 && didItHit) {
+		if (distance <= 5 && didItHit) {
 			this.transform.position = worldPoint;
 		} else {
 			//this.transform.position = lastPosition;
-			this.transform.position = playerPosition + ((worldPoint - playerPosition).normalized * 50);
+			this.transform.position = playerPosition + ((worldPoint - playerPosition).normalized * 5);
 		}
 	
 	}
