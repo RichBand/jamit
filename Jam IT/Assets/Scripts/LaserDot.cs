@@ -8,7 +8,7 @@ public class LaserDot : MonoBehaviour {
 	public bool laserActivated = false;
 	public int batteryLevel;
 	public Vector3 laserSize;
-	public GameObject playerObject;
+	GameObject playerObject;
 	public Vector3 lastPosition = Vector3.zero;
 	// Use this for initialization
 	void Start () {
@@ -54,7 +54,7 @@ public class LaserDot : MonoBehaviour {
 		lastPosition = this.transform.position;
 		float distance = Vector3.Distance(worldPoint, playerPosition);//diff.magnitude;
 		//float distance = Vector3.Distance(this.transform.position, playerPosition);//diff.magnitude;
-		Debug.Log(distance);
+		//Debug.Log(distance);
 		
 		if (distance <= 50 && didItHit) {
 			this.transform.position = worldPoint;
