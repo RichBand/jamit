@@ -25,7 +25,7 @@ public class LaserDot : MonoBehaviour {
 		{
 			laserActivated = true;
 			batteryLevel--;
-			this.transform.localScale = Vector3.one;
+			this.transform.localScale = Vector3.one/5;
 		}
 		else {
 			laserActivated = false;
