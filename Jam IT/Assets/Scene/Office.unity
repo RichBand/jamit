@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1829391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 27075249}
   - component: {fileID: 27075248}
   - component: {fileID: 27075247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 27488369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 30645901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 33530501}
   - component: {fileID: 33530502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 33821695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 46701072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tables_Assets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 65699846}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 69908649}
   - component: {fileID: 69908648}
   - component: {fileID: 69908647}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 73786898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 77223076}
   - component: {fileID: 77223077}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 82943809}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 86107944}
   - component: {fileID: 86107943}
   - component: {fileID: 86107945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +731,8 @@ GameObject:
   - component: {fileID: 88154893}
   - component: {fileID: 88154895}
   - component: {fileID: 88154894}
-  m_Layer: 0
+  - component: {fileID: 88154896}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,6 +793,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 88154892}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &88154896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88154892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0.00000047683716}
 --- !u!1 &92802471
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +814,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 92802472}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -831,7 +844,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 98975088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +875,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 106441497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +907,8 @@ GameObject:
   - component: {fileID: 108589799}
   - component: {fileID: 108589801}
   - component: {fileID: 108589800}
-  m_Layer: 0
+  - component: {fileID: 108589802}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,6 +969,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 108589798}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &108589802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108589798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0}
 --- !u!1 &117719261
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +990,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 117719262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +1023,7 @@ GameObject:
   - component: {fileID: 130264353}
   - component: {fileID: 130264352}
   - component: {fileID: 130264351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1115,7 @@ GameObject:
   - component: {fileID: 137175570}
   - component: {fileID: 137175569}
   - component: {fileID: 137175568}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: LaserDot
   m_TagString: LaserDot
   m_Icon: {fileID: 0}
@@ -1105,7 +1131,7 @@ Transform:
   m_GameObject: {fileID: 137175566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1609962685}
   m_RootOrder: 0
@@ -1136,8 +1162,8 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 137175566}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1191,7 +1217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 139098037}
   - component: {fileID: 139098038}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Projector2 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1266,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 145925433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,7 +1298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174394430}
   - component: {fileID: 174394431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209854518}
   - component: {fileID: 209854519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1404,7 @@ GameObject:
   - component: {fileID: 220022059}
   - component: {fileID: 220022058}
   - component: {fileID: 220022057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1492,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 248229499}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1488,6 +1514,69 @@ Transform:
   m_Father: {fileID: 1747747851}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &249038054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 249038055}
+  - component: {fileID: 249038056}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &249038055
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249038054}
+  m_LocalRotation: {x: 0.674996, y: 0.7118104, z: -0.1592241, w: 0.11114924}
+  m_LocalPosition: {x: -0.25, y: 1.41, z: 4.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1180791790}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 157.869, y: 3.5099945, z: -92.35498}
+--- !u!108 &249038056
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249038054}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 3.8
+  m_Range: 17.901983
+  m_SpotAngle: 51.641712
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &250589624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250589625}
   - component: {fileID: 250589626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1553,7 +1642,8 @@ GameObject:
   - component: {fileID: 252294693}
   - component: {fileID: 252294695}
   - component: {fileID: 252294694}
-  m_Layer: 0
+  - component: {fileID: 252294696}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1614,6 +1704,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 252294692}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &252294696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252294692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0.00000047683716}
 --- !u!1 &255884326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,7 +1725,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 255884327}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1653,7 +1755,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 256343315}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1785,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 305405542}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1714,7 +1816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307740885}
   - component: {fileID: 307740886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1767,7 +1869,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 310991583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1797,7 +1899,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 316689666}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1827,7 +1929,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 333526395}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1849,6 +1951,69 @@ Transform:
   m_Father: {fileID: 1747747851}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &347446442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 347446443}
+  - component: {fileID: 347446444}
+  m_Layer: 0
+  m_Name: Spotlight (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &347446443
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347446442}
+  m_LocalRotation: {x: 0.5295833, y: 0.375236, z: 0.38215166, w: 0.6577992}
+  m_LocalPosition: {x: 5.06, y: 1.36, z: 4.88}
+  m_LocalScale: {x: 1, y: 1, z: 1.0000001}
+  m_Children: []
+  m_Father: {fileID: 1180791790}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 155.8, y: -99.941986, z: -99.274994}
+--- !u!108 &347446444
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347446442}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 6.8
+  m_Range: 10.315853
+  m_SpotAngle: 61
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &355198333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +2023,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 355198334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +2053,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 361812562}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1919,7 +2084,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 386709324}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1952,7 +2117,8 @@ GameObject:
   - component: {fileID: 390424538}
   - component: {fileID: 390424540}
   - component: {fileID: 390424539}
-  m_Layer: 0
+  - component: {fileID: 390424541}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2013,6 +2179,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 390424537}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &390424541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390424537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.0000004917383, y: -0.038882807, z: 0.00000047683716}
 --- !u!1 &390539476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,7 +2200,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 390539477}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2052,7 +2230,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 420676206}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +2263,7 @@ GameObject:
   - component: {fileID: 432780098}
   - component: {fileID: 432780097}
   - component: {fileID: 432780096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2174,7 +2352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 442260696}
   - component: {fileID: 442260697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2236,7 +2414,8 @@ GameObject:
   - component: {fileID: 465113406}
   - component: {fileID: 465113408}
   - component: {fileID: 465113407}
-  m_Layer: 0
+  - component: {fileID: 465113409}
+  m_Layer: 10
   m_Name: ProjectorScreen1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2298,6 +2477,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 465113405}
   m_Mesh: {fileID: 4300000, guid: 05035ea001e02ad488c15be5603032e7, type: 3}
+--- !u!65 &465113409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465113405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.034547664, y: 1.7233863, z: 2.0300252}
+  m_Center: {x: 0, y: -0.00000011920929, z: 0}
 --- !u!1 &475271722
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,7 +2501,7 @@ GameObject:
   - component: {fileID: 475271726}
   - component: {fileID: 475271725}
   - component: {fileID: 475271724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2398,7 +2589,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 475411698}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2429,7 +2620,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 478243239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2459,7 +2650,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 486438171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2491,7 +2682,8 @@ GameObject:
   - component: {fileID: 490637926}
   - component: {fileID: 490637928}
   - component: {fileID: 490637927}
-  m_Layer: 0
+  - component: {fileID: 490637929}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2552,6 +2744,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 490637925}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &490637929
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 490637925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0.00000047683716}
 --- !u!1 &500165449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,7 +2765,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 500165450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop_Assets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2618,7 +2822,7 @@ GameObject:
   - component: {fileID: 525183856}
   - component: {fileID: 525183855}
   - component: {fileID: 525183854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2706,7 +2910,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 533776929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2824,7 +3028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 563829052}
   - component: {fileID: 563829053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,7 +3082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565631949}
   - component: {fileID: 565631950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2931,7 +3135,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 586410295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2961,7 +3165,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 591328664}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2991,7 +3195,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 593413608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3023,7 +3227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 593593954}
   - component: {fileID: 593593955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rightwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3072,7 +3276,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 610418886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3103,7 +3307,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 612290383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3136,7 +3340,7 @@ GameObject:
   - component: {fileID: 629843411}
   - component: {fileID: 629843410}
   - component: {fileID: 629843409}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3224,7 +3428,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 648404032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3256,7 +3460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649333346}
   - component: {fileID: 649333347}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Projector1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3393,7 +3597,8 @@ GameObject:
   - component: {fileID: 691553978}
   - component: {fileID: 691553980}
   - component: {fileID: 691553979}
-  m_Layer: 0
+  - component: {fileID: 691553981}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3454,6 +3659,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691553977}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &691553981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 691553977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0.00000071525574}
 --- !u!1 &696435645
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,7 +3680,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 696435646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3496,7 +3713,7 @@ GameObject:
   - component: {fileID: 700047770}
   - component: {fileID: 700047769}
   - component: {fileID: 700047768}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3583,7 +3800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 712157584}
   - component: {fileID: 712157585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3636,7 +3853,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 717261534}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3668,7 +3885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 717391455}
   - component: {fileID: 717391456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3721,7 +3938,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 731033743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3837,7 +4054,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 768129626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3867,7 +4084,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 788237999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3897,7 +4114,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 792897285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3929,7 +4146,8 @@ GameObject:
   - component: {fileID: 828819563}
   - component: {fileID: 828819565}
   - component: {fileID: 828819564}
-  m_Layer: 0
+  - component: {fileID: 828819566}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3990,6 +4208,81 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 828819562}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &828819566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828819562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0.00000047683716}
+--- !u!1 &835201986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 835201987}
+  - component: {fileID: 835201988}
+  m_Layer: 0
+  m_Name: Spotlight (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &835201987
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835201986}
+  m_LocalRotation: {x: 0.38476348, y: 0.55057186, z: -0.6114506, w: -0.41827723}
+  m_LocalPosition: {x: 3.61, y: 1.36, z: 4.99}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 1180791790}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 159.426, y: 95.987, z: -87.316986}
+--- !u!108 &835201988
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835201986}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 8
+  m_Range: 10.76
+  m_SpotAngle: 86
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &852554534
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,7 +4292,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 852554535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4029,7 +4322,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 883397013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4059,7 +4352,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 896190109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4090,7 +4383,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 924360421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4120,7 +4413,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 938937334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4151,7 +4444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951910406}
   - component: {fileID: 951910407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4200,7 +4493,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 971332490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4233,7 +4526,7 @@ GameObject:
   - component: {fileID: 982810695}
   - component: {fileID: 982810694}
   - component: {fileID: 982810693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4321,7 +4614,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 986770781}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4351,7 +4644,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 987988361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4382,7 +4675,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 992623592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4412,7 +4705,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1003324371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4442,7 +4735,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1003420574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4472,7 +4765,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1007302722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4504,7 +4797,8 @@ GameObject:
   - component: {fileID: 1008260689}
   - component: {fileID: 1008260691}
   - component: {fileID: 1008260690}
-  m_Layer: 0
+  - component: {fileID: 1008260692}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4565,6 +4859,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1008260688}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &1008260692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008260688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.0000004917383, y: -0.038882807, z: 0.000000834465}
 --- !u!1 &1035403429
 GameObject:
   m_ObjectHideFlags: 0
@@ -4577,7 +4883,7 @@ GameObject:
   - component: {fileID: 1035403433}
   - component: {fileID: 1035403432}
   - component: {fileID: 1035403431}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4665,7 +4971,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1060799553}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4695,7 +5001,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1080908326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4725,7 +5031,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1113946216}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4773,7 +5079,7 @@ Light:
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.42
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -4794,7 +5100,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0.65
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1129487903
@@ -4803,13 +5109,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1129487901}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.22011293, y: 0.8388514, z: -0.0015080525, w: -0.49787188}
+  m_LocalPosition: {x: 49.2, y: 16.9, z: 35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.809001, y: 238.861, z: -22.158}
 --- !u!1 &1136821303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,7 +5125,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1136821304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4851,7 +5157,8 @@ GameObject:
   - component: {fileID: 1141480399}
   - component: {fileID: 1141480401}
   - component: {fileID: 1141480400}
-  m_Layer: 0
+  - component: {fileID: 1141480402}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4912,6 +5219,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1141480398}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &1141480402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1141480398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0.00000047683716}
 --- !u!1 &1149584381
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,7 +5242,8 @@ GameObject:
   - component: {fileID: 1149584382}
   - component: {fileID: 1149584384}
   - component: {fileID: 1149584383}
-  m_Layer: 0
+  - component: {fileID: 1149584385}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4984,6 +5304,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1149584381}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &1149584385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149584381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: -0.00000010430813, y: -0.038882807, z: 0.00000047683716}
 --- !u!1 &1155802087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,7 +5325,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1155802088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5027,7 +5359,7 @@ GameObject:
   - component: {fileID: 1166209479}
   - component: {fileID: 1166209478}
   - component: {fileID: 1166209477}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5118,7 +5450,7 @@ GameObject:
   - component: {fileID: 1170769405}
   - component: {fileID: 1170769404}
   - component: {fileID: 1170769406}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FrontWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5291,7 +5623,7 @@ GameObject:
   - component: {fileID: 1175742587}
   - component: {fileID: 1175742586}
   - component: {fileID: 1175742585}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FrontWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5331,7 +5663,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175742583}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -5404,6 +5736,9 @@ Transform:
   - {fileID: 1223003134}
   - {fileID: 1609962685}
   - {fileID: 1324597566}
+  - {fileID: 249038055}
+  - {fileID: 347446443}
+  - {fileID: 835201987}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -5502,7 +5837,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1222148028}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5535,7 +5870,7 @@ GameObject:
   - component: {fileID: 1223003137}
   - component: {fileID: 1223003136}
   - component: {fileID: 1223003135}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PlayerHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5611,7 +5946,7 @@ GameObject:
   - component: {fileID: 1225481599}
   - component: {fileID: 1225481598}
   - component: {fileID: 1225481597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5702,7 +6037,7 @@ GameObject:
   - component: {fileID: 1245769757}
   - component: {fileID: 1245769756}
   - component: {fileID: 1245769755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5793,7 +6128,7 @@ GameObject:
   - component: {fileID: 1246645369}
   - component: {fileID: 1246645368}
   - component: {fileID: 1246645367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5881,7 +6216,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1261809612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5914,7 +6249,7 @@ GameObject:
   - component: {fileID: 1272345471}
   - component: {fileID: 1272345470}
   - component: {fileID: 1272345469}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6005,7 +6340,7 @@ GameObject:
   - component: {fileID: 1273176956}
   - component: {fileID: 1273176955}
   - component: {fileID: 1273176957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6088,7 +6423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285147557}
   - component: {fileID: 1285147558}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Projector2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6137,7 +6472,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1299843367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6170,7 +6505,7 @@ GameObject:
   - component: {fileID: 1307213465}
   - component: {fileID: 1307213464}
   - component: {fileID: 1307213463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6262,7 +6597,7 @@ GameObject:
   - component: {fileID: 1324597569}
   - component: {fileID: 1324597568}
   - component: {fileID: 1324597567}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: NerdHitbox
   m_TagString: Nerd
   m_Icon: {fileID: 0}
@@ -6356,7 +6691,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1324841735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6386,7 +6721,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1353937899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6418,7 +6753,8 @@ GameObject:
   - component: {fileID: 1359465018}
   - component: {fileID: 1359465020}
   - component: {fileID: 1359465019}
-  m_Layer: 0
+  - component: {fileID: 1359465021}
+  m_Layer: 10
   m_Name: ProjectorScreen1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6480,6 +6816,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1359465017}
   m_Mesh: {fileID: 4300000, guid: 05035ea001e02ad488c15be5603032e7, type: 3}
+--- !u!65 &1359465021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359465017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.034547664, y: 1.7233863, z: 2.0300252}
+  m_Center: {x: 0, y: -0.00000011920929, z: 0}
 --- !u!1 &1396353348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6492,7 +6840,7 @@ GameObject:
   - component: {fileID: 1396353352}
   - component: {fileID: 1396353351}
   - component: {fileID: 1396353350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6583,7 +6931,7 @@ GameObject:
   - component: {fileID: 1396950968}
   - component: {fileID: 1396950967}
   - component: {fileID: 1396950966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6674,7 +7022,7 @@ GameObject:
   - component: {fileID: 1403232101}
   - component: {fileID: 1403232100}
   - component: {fileID: 1403232099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6762,7 +7110,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1405480916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6792,7 +7140,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1413556550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6825,7 +7173,7 @@ GameObject:
   - component: {fileID: 1421877958}
   - component: {fileID: 1421877957}
   - component: {fileID: 1421877956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6914,7 +7262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1431060584}
   - component: {fileID: 1431060585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6966,7 +7314,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1440616459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6996,7 +7344,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1477915211}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7026,7 +7374,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1502126512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7143,7 +7491,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1505834304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7173,7 +7521,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1507779082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7203,7 +7551,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1509357546}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7235,7 +7583,8 @@ GameObject:
   - component: {fileID: 1509448912}
   - component: {fileID: 1509448914}
   - component: {fileID: 1509448913}
-  m_Layer: 0
+  - component: {fileID: 1509448915}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7296,6 +7645,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1509448911}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &1509448915
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1509448911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: 0.000000014901165, y: -0.038882807, z: 0.00000047683716}
 --- !u!1 &1512665023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7305,7 +7666,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1512665024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7338,7 +7699,7 @@ GameObject:
   - component: {fileID: 1551456727}
   - component: {fileID: 1551456726}
   - component: {fileID: 1551456725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7428,7 +7789,7 @@ GameObject:
   - component: {fileID: 1609962685}
   - component: {fileID: 1609962687}
   - component: {fileID: 1609962686}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: LaserRange
   m_TagString: LaserRange
   m_Icon: {fileID: 0}
@@ -7444,7 +7805,7 @@ Transform:
   m_GameObject: {fileID: 1609962684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 137175567}
   m_Father: {fileID: 1180791790}
@@ -7488,7 +7849,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1639600478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7518,7 +7879,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1694720921}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7549,7 +7910,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1694832211}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7581,7 +7942,8 @@ GameObject:
   - component: {fileID: 1698013239}
   - component: {fileID: 1698013241}
   - component: {fileID: 1698013240}
-  m_Layer: 0
+  - component: {fileID: 1698013242}
+  m_Layer: 10
   m_Name: ProjectorScreen1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7643,6 +8005,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1698013238}
   m_Mesh: {fileID: 4300000, guid: 58d9a6b47a2d62645a7f842ba93b8e2e, type: 3}
+--- !u!65 &1698013242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698013238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03454767, y: 1.7233863, z: 2.0300257}
+  m_Center: {x: -0.000000059604645, y: 0, z: 0.000000014901161}
 --- !u!1 &1715221360
 GameObject:
   m_ObjectHideFlags: 0
@@ -7653,7 +8027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1715221361}
   - component: {fileID: 1715221362}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7706,8 +8080,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1746943949}
-  m_Layer: 0
-  m_Name: Walla_Assets
+  m_Layer: 8
+  m_Name: Wall_Assets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7741,8 +8115,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1747747851}
   - component: {fileID: 1747747852}
-  m_Layer: 0
-  m_Name: Wall2 (1)
+  m_Layer: 2
+  m_Name: FrontWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7756,7 +8130,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1747747850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10579491, y: -0.33262396, z: -6.652076}
+  m_LocalPosition: {x: 0.10579491, y: -0.33262396, z: 5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1175742584}
@@ -7804,7 +8178,7 @@ GameObject:
   - component: {fileID: 1748613297}
   - component: {fileID: 1748613296}
   - component: {fileID: 1748613295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7892,7 +8266,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1762978782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7925,7 +8299,7 @@ GameObject:
   - component: {fileID: 1806658980}
   - component: {fileID: 1806658979}
   - component: {fileID: 1806658978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8013,7 +8387,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1829462916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8043,7 +8417,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1832732550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8073,7 +8447,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1852465407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8104,7 +8478,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1865580883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8134,7 +8508,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1870357870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8164,7 +8538,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1870804566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8197,7 +8571,7 @@ GameObject:
   - component: {fileID: 1887759175}
   - component: {fileID: 1887759174}
   - component: {fileID: 1887759173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laptop3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8285,7 +8659,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1888518521}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8350,7 +8724,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1935701004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8380,7 +8754,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1946081369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8413,7 +8787,7 @@ GameObject:
   - component: {fileID: 1950380177}
   - component: {fileID: 1950380176}
   - component: {fileID: 1950380178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WoodenFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8495,7 +8869,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1966869037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8540,13 +8914,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973865621}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 3.9154215, y: -0.0068626404, z: 4.3024983}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.44, y: 5.12, z: 3.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1180791790}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &1973865623
 Light:
   m_ObjectHideFlags: 0
@@ -8556,11 +8930,11 @@ Light:
   m_GameObject: {fileID: 1973865621}
   m_Enabled: 1
   serializedVersion: 7
-  m_Type: 1
+  m_Type: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.8
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Intensity: 8
+  m_Range: 17.34
+  m_SpotAngle: 138.05946
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -8591,7 +8965,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1984452572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8622,7 +8996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016828643}
   - component: {fileID: 2016828644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8678,7 +9052,7 @@ GameObject:
   - component: {fileID: 2030827783}
   - component: {fileID: 2030827782}
   - component: {fileID: 2030827781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Nerd
   m_TagString: Nerd
   m_Icon: {fileID: 0}
@@ -8765,7 +9139,7 @@ GameObject:
   - component: {fileID: 2031304097}
   - component: {fileID: 2031304099}
   - component: {fileID: 2031304098}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Laserbeam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8906,7 +9280,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2032882685}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8936,7 +9310,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2041889216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8968,7 +9342,8 @@ GameObject:
   - component: {fileID: 2057680812}
   - component: {fileID: 2057680814}
   - component: {fileID: 2057680813}
-  m_Layer: 0
+  - component: {fileID: 2057680815}
+  m_Layer: 8
   m_Name: Table_GenMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9029,6 +9404,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2057680811}
   m_Mesh: {fileID: 4300000, guid: aac342993c1982045baf4a59dd6cf3c0, type: 3}
+--- !u!65 &2057680815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057680811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75604707, y: 0.76947165, z: 1.6752664}
+  m_Center: {x: -0.000000461936, y: -0.038882807, z: 0.00000023841858}
 --- !u!1 &2064853307
 GameObject:
   m_ObjectHideFlags: 0
@@ -9038,7 +9425,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2064853308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TableLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9068,7 +9455,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2066725243}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9099,7 +9486,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2094262329}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
