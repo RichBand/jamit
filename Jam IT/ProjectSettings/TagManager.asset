@@ -8,6 +8,7 @@ TagManager:
   - Nerd
   - LaserRange
   - PlayerHitBox
+  - LaserBeam
   layers:
   - Default
   - TransparentFX
