@@ -25,6 +25,7 @@ public class LaserDotController : MonoBehaviour {
 		{
 			laserActivated = true;
 			batteryLevel--;
+			Debug.Log("Battery Level: " + batteryLevel);
 			this.transform.localScale = Vector3.one/5;
 		}
 		else {
