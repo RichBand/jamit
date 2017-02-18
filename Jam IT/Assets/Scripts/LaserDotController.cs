@@ -16,8 +16,8 @@ public class LaserDotController : MonoBehaviour {
 	void Start () {
 		//Cursor.lockState = CursorLockMode.Locked;
 		//Cursor.visible = false;
-		batteryLevel = 100;
-		//laserSize = this.transform.localScale;
+		batteryLevel = 1000;
+		
 		playerObject = GameObject.FindGameObjectWithTag("Player");
 		laserBeamObject = GameObject.FindGameObjectWithTag("LaserBeam");
 		laserImpactObject = GameObject.FindGameObjectWithTag("LaserImpact");
@@ -32,22 +32,16 @@ public class LaserDotController : MonoBehaviour {
 			laserBeamObject.GetComponent<Renderer>().enabled = true;
 			batteryLevel--;
 			//Debug.Log("Battery Level: " + batteryLevel);
-			//this.transform.localScale = Vector3.one/5;
 			
 		}
 		else {
 			laserActivated = false;
 			laserImpactObject.active = false;
 			laserBeamObject.GetComponent<Renderer>().enabled = false;
-			//this.transform.localScale = laserSize;
 			
 		}
-		//Debug.Log("Battery level: " + batteryLevel);
-		var playerPosition = playerObject.transform.position;
-		//var h = horizontalSpeed * Input.GetAxis ("Mouse X");
- 		//var v = verticalSpeed * Input.GetAxis ("Mouse Y");
-		//Vector3 diff = this.transform.position - playerPosition;
 		
+		var playerPosition = playerObject.transform.position;
 		RaycastHit mouseCollision;
 		Vector3 worldPoint = Vector3.zero;
 		bool didItHit = false;
