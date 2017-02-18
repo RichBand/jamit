@@ -24,6 +24,7 @@ public class Nerd : MonoBehaviour {
             goal = playerPosition;
         }
        void OnTriggerEnter(Collider other) {
+<<<<<<< HEAD
         if (other.gameObject.tag == "LaserDot" &&  laserDot.GetComponent<LaserDotController>().laserActivated == true) {
             Debug.Log("NERD ANGRY!");
             nerdAngry = true;
@@ -34,6 +35,11 @@ public class Nerd : MonoBehaviour {
         else if(other.gameObject.tag == "LaserRange" && nerdAngry == false && laserDot.GetComponent<LaserDotController>().laserActivated == true) {
             Debug.Log("Nerd Interested");
             nerdInterested = true;
+=======
+        //Debug.Log(other.name);
+        if (other.gameObject.tag == "LaserRange") {
+            this.agent.speed = this.agent.speed * 3;
+>>>>>>> 3357c89... battery and worspace scripts and UI
         }
        }
        void Update () {
