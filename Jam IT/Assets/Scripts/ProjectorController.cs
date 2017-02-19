@@ -8,6 +8,7 @@ public class ProjectorController : MonoBehaviour {
 public float projectorCharge;
 public float maxBrightness;
 public Light projectorLight;
+public bool projectorActivated = false;
 
 
 
@@ -26,6 +27,7 @@ public Light projectorLight;
 		}
 		if(projectorCharge >= 1.0f) {
 			Debug.Log("WE ARE FULLY CHARGED!");
+			projectorActivated = true;
 
 		}
 		
