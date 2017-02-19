@@ -4,8 +4,7 @@ using UnityEngine.SceneManagement;
 public class VictoryScript : MonoBehaviour {
 	
 	bool mouseState = false;
-    private object scene;
-    GameObject Scene;
+    GameObject scene;
 	
 	void Awake(){
 		if(PlayerPrefs.GetFloat("veteran") == 0){
@@ -29,7 +28,7 @@ public class VictoryScript : MonoBehaviour {
 		tempR.width = Screen.height * 2;
 		tempR.x = Screen.width/2 - Screen.height;
 			
-		//scene.GetComponent<GUITexture>().pixelInset = tempR;
+		scene.GetComponent<GUITexture>().pixelInset = tempR;
 		
 	}
 	
