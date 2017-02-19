@@ -10,6 +10,7 @@ public float maxBrightness;
 private Light projectorLight;
 
 
+
 	// Use this for initialization
 	void Start () {
 		Transform projector = transform.Find("Projector");
@@ -25,6 +26,7 @@ private Light projectorLight;
 		}
 		if(projectorCharge >= 1.0f) {
 			Debug.Log("WE ARE FULLY CHARGED!");
+
 		}
 		
 	}
