@@ -1230,6 +1230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 139098037}
   - component: {fileID: 139098038}
+  - component: {fileID: 139098039}
   m_Layer: 10
   m_Name: RightProjectorAssembly
   m_TagString: Untagged
@@ -1271,6 +1272,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &139098039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 139098036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76ef0a2ce22341ffb256adf8a95235b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectorCharge: 0
+  maxBrightness: 0
+  projectorLight: {fileID: 0}
 --- !u!1 &145925432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,8 +1554,8 @@ GameObject:
   - component: {fileID: 249038055}
   - component: {fileID: 249038056}
   m_Layer: 0
-  m_Name: RearProjector
-  m_TagString: Untagged
+  m_Name: Projector
+  m_TagString: Projector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1979,9 +1994,10 @@ GameObject:
   m_Component:
   - component: {fileID: 347446443}
   - component: {fileID: 347446444}
+  - component: {fileID: 347446445}
   m_Layer: 0
-  m_Name: LeftProjector
-  m_TagString: Untagged
+  m_Name: Projector
+  m_TagString: Projector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2035,6 +2051,20 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &347446445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347446442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76ef0a2ce22341ffb256adf8a95235b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectorCharge: 0
+  maxBrightness: 0
+  projectorLight: {fileID: 0}
 --- !u!1 &355198333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,9 +2467,10 @@ GameObject:
   - component: {fileID: 465113408}
   - component: {fileID: 465113407}
   - component: {fileID: 465113409}
+  - component: {fileID: 465113410}
   m_Layer: 10
   m_Name: ProjectorScreen
-  m_TagString: Untagged
+  m_TagString: ProjectorScreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2512,6 +2543,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034547664, y: 1.7233863, z: 2.0300252}
   m_Center: {x: 0, y: -0.00000011920929, z: 0}
+--- !u!114 &465113410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465113405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9de6e620ba5b4b27a3fcb5ceecae748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDot: {fileID: 0}
 --- !u!1 &475271722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4000,8 +4043,8 @@ GameObject:
   - component: {fileID: 835201987}
   - component: {fileID: 835201988}
   m_Layer: 0
-  m_Name: RightProjector
-  m_TagString: Untagged
+  m_Name: Projector
+  m_TagString: Projector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6026,6 +6069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285147557}
   - component: {fileID: 1285147558}
+  - component: {fileID: 1285147559}
   m_Layer: 10
   m_Name: LeftProjectorAssembly
   m_TagString: Untagged
@@ -6067,6 +6111,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1285147559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285147556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76ef0a2ce22341ffb256adf8a95235b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectorCharge: 0
+  maxBrightness: 0
+  projectorLight: {fileID: 0}
 --- !u!1 &1299843366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6365,9 +6423,10 @@ GameObject:
   - component: {fileID: 1359465020}
   - component: {fileID: 1359465019}
   - component: {fileID: 1359465021}
+  - component: {fileID: 1359465022}
   m_Layer: 10
   m_Name: ProjectorScreen
-  m_TagString: Untagged
+  m_TagString: ProjectorScreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6440,6 +6499,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034547664, y: 1.7233863, z: 2.0300252}
   m_Center: {x: 0, y: -0.00000011920929, z: 0}
+--- !u!114 &1359465022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1359465017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9de6e620ba5b4b27a3fcb5ceecae748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDot: {fileID: 0}
 --- !u!1 &1396353348
 GameObject:
   m_ObjectHideFlags: 0
@@ -7538,9 +7609,10 @@ GameObject:
   - component: {fileID: 1698013241}
   - component: {fileID: 1698013240}
   - component: {fileID: 1698013242}
+  - component: {fileID: 1698013243}
   m_Layer: 10
   m_Name: ProjectorScreen
-  m_TagString: Untagged
+  m_TagString: ProjectorScreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7613,6 +7685,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03454767, y: 1.7233863, z: 2.0300257}
   m_Center: {x: -0.000000059604645, y: 0, z: 0.000000014901161}
+--- !u!114 &1698013243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698013238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9de6e620ba5b4b27a3fcb5ceecae748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserDot: {fileID: 0}
 --- !u!1 &1715221360
 GameObject:
   m_ObjectHideFlags: 0

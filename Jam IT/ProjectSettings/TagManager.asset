@@ -10,6 +10,8 @@ TagManager:
   - PlayerHitBox
   - LaserBeam
   - LaserImpact
+  - Projector
+  - ProjectorScreen
   layers:
   - Default
   - TransparentFX

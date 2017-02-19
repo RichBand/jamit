@@ -51,6 +51,8 @@
      <Compile Include="Assets\Scripts\LaserDotController.cs" />
      <Compile Include="Assets\Scripts\Nerd.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\ProjectorController.cs" />
+     <Compile Include="Assets\Scripts\ProjectorScreenController.cs" />
      <Compile Include="Assets\Scripts\Test.cs" />
      <Compile Include="Assets\Scripts\Workspace.cs" />
      <Compile Include="Assets\Scripts\layerMask.cs" />
