@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 	private Rigidbody m_rb;
 	public Animator Anim;
 	public bool m_moveUp;
+	public bool m_walking = false;
 	public bool m_moveDown;
 	public bool m_moveRight;
 	public bool m_moveLeft;
@@ -23,14 +24,14 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		m_rb = GetComponent<Rigidbody>();
-		
+		Anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		handleInput();
 		handleRotation();
-		
+		handleAnimations();
 	}
 
 	void FixedUpdate () {
@@ -39,8 +40,10 @@ public class Player : MonoBehaviour {
 	private void handleInput () {
 		if(Input.GetKey(KeyCode.W)) {
 			m_turnup = true;
+			m_walking = true;
          } else {
 			 m_turnup = false;
+			 m_walking = false;
 		 }
 		 if(Input.GetKey(KeyCode.S)) {
 			m_turndown = true;
@@ -133,7 +136,15 @@ public class Player : MonoBehaviour {
 	private void handleMovement() {
 		transform.eulerAngles = m_rotation;
 		transform.Translate(playerVelocity * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, playerVelocity * Input.GetAxis("Vertical") * Time.deltaTime,Space.World);
-		Anim.SetBool("Walk", true);
-		Anim.SetBool("Idle", false);
+		
+	}
+
+	void handleAnimations() {
+		if(m_walking) {
+			Anim.SetBool("Walk", true);
+			Anim.SetBool("Idle", false);
+		} else {
+			Anim.SetBool("Walk", false);
+		}
 	}
 }
