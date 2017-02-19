@@ -37,7 +37,7 @@ public class Player : MonoBehaviour {
 			Debug.Log("Charging");
 			GameObject LaserDot = GameObject.FindGameObjectWithTag("LaserDot");
 			LaserDot.GetComponent<LaserDotController>().batteryLevel = 100;
-			Debug.Log(LaserDot.GetComponent<LaserDotController>().batteryLevel);
+			Debug.Log("BATTERY LEVEL: "+LaserDot.GetComponent<LaserDotController>().batteryLevel);
 		}
 	}
 	void OnTriggerExit(Collider other){
@@ -57,7 +57,7 @@ public class Player : MonoBehaviour {
 	}
 
 
-	public float playerVelocity = 5f;
+	public float playerVelocity = 500f;
 	Vector3 m_rotation = new Vector3();
 	// Use this for initialization
 	void Start () {

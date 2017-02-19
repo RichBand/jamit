@@ -16,7 +16,7 @@ public class LaserDotController : MonoBehaviour {
 	void Start () {
 		//Cursor.lockState = CursorLockMode.Locked;
 		//Cursor.visible = false;
-		batteryLevel = 1000;
+		batteryLevel = 100;
 		
 		playerObject = GameObject.FindGameObjectWithTag("Player");
 		laserBeamObject = GameObject.FindGameObjectWithTag("LaserBeam");
@@ -31,7 +31,7 @@ public class LaserDotController : MonoBehaviour {
 			laserImpactObject.active = true;
 			laserBeamObject.GetComponent<Renderer>().enabled = true;
 			batteryLevel--;
-			//Debug.Log("Battery Level: " + batteryLevel);
+			Debug.Log("Battery Level: " + batteryLevel);
 			
 		}
 		else {
