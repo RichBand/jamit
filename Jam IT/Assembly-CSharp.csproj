@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Idle.cs" />
      <Compile Include="Assets\Scripts\Battery.cs" />
      <Compile Include="Assets\Scripts\LaserBeam.cs" />
      <Compile Include="Assets\Scripts\LaserDotController.cs" />
