@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 	private Rigidbody m_rb;
-	private Animator Anim;
+	public Animator Anim;
 	public bool m_moveUp;
 	public bool m_moveDown;
 	public bool m_moveRight;
@@ -18,11 +18,12 @@ public class Player : MonoBehaviour {
 	public bool m_turndownleft;
 	public bool m_turndownright;
 
-	public float playerVelocity = 1f;
+	public float playerVelocity = 5f;
 	Vector3 m_rotation = new Vector3();
 	// Use this for initialization
 	void Start () {
 		m_rb = GetComponent<Rigidbody>();
+		
 	}
 	
 	// Update is called once per frame
@@ -90,63 +91,49 @@ public class Player : MonoBehaviour {
 			Vector3 rotUp = new Vector3();
 			rotUp.y = 1;
 			m_rotation = rotUp;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 		else if(m_turndown){
 			Vector3 rotDown = new Vector3();
 			rotDown.y = 180;
 			m_rotation = rotDown;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 
 		else if(m_turnleft){
 			Vector3 rotLeft = new Vector3();
 			rotLeft.y = 270;
 			m_rotation = rotLeft;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 		else if(m_turnright){
 			Vector3 rotRight = new Vector3();
 			rotRight.y = 90;
 			m_rotation = rotRight;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 		else if(m_turnupleft){
 			Vector3 rotUp = new Vector3();
 			rotUp.y = 315;
 			m_rotation = rotUp;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 		else if(m_turndownleft){
 			Vector3 rotDown = new Vector3();
 			rotDown.y = 225;
 			m_rotation = rotDown;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 
 		else if(m_turnupright){
 			Vector3 rotLeft = new Vector3();
 			rotLeft.y = 45;
 			m_rotation = rotLeft;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 		else if(m_turndownright){
 			Vector3 rotRight = new Vector3();
 			rotRight.y = 135;
 			m_rotation = rotRight;
-			Anim.SetBool("walk",true);
-			Anim.SetBool("Idle",false);
 		}
 	}
 	private void handleMovement() {
 		transform.eulerAngles = m_rotation;
 		transform.Translate(playerVelocity * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, playerVelocity * Input.GetAxis("Vertical") * Time.deltaTime,Space.World);
+		Anim.SetBool("Walk", true);
+		Anim.SetBool("Idle", false);
 	}
 }

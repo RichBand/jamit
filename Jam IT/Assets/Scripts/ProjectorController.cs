@@ -7,17 +7,15 @@ using UnityEngine;
 public class ProjectorController : MonoBehaviour {
 public float projectorCharge;
 public float maxBrightness;
-public Light projectorLight;
+private Light projectorLight;
 
 
 	// Use this for initialization
 	void Start () {
-		Transform projector = transform.FindChild( "Projector" );
+		Transform projector = transform.Find("Projector");
 		projectorLight = projector.GetComponent<Light>();
-		
 		maxBrightness = projectorLight.intensity;
 		projectorLight.intensity = 0f;
-		
 	}
 	
 	// Update is called once per frame

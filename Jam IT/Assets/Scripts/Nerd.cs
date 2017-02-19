@@ -17,7 +17,7 @@ public class Nerd : MonoBehaviour {
      UnityEngine.AI.NavMeshAgent agent;
        void Start () {
             agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-            playerHitBox = GameObject.FindGameObjectWithTag("PlayerHitBox");
+            playerHitBox = GameObject.FindGameObjectWithTag("Player");
             laserDot = GameObject.FindGameObjectWithTag("LaserDot");
             playerPosition = playerHitBox.transform;
             laserPosition = laserDot.transform;
