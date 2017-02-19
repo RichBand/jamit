@@ -47,16 +47,19 @@ public class Player : MonoBehaviour {
 		 }
 		 if(Input.GetKey(KeyCode.S)) {
 			m_turndown = true;
+			m_walking = true;
          } else {
 			 m_turndown = false;
 		 }
          if(Input.GetKey(KeyCode.D)) {
 			m_turnright = true;
+			m_walking = true;
          } else {
 			 m_turnright = false;
 		 }
          if(Input.GetKey(KeyCode.A)) {
 			m_turnleft = true;
+			m_walking = true;
          } else {
 			 m_turnleft = false;
 		 }
@@ -64,6 +67,7 @@ public class Player : MonoBehaviour {
 			m_turnup = false;
 			m_turnleft = false;
 			m_turnupleft = true;
+			m_walking = true;
          } else {
 			 m_turnupleft = false;
 		 }
@@ -71,6 +75,7 @@ public class Player : MonoBehaviour {
 			m_turndown = false;
 			m_turnleft = false;
 			m_turndownleft = true;
+			m_walking = true;
          } else {
 			 m_turndownleft = false;
 		 }
@@ -78,6 +83,7 @@ public class Player : MonoBehaviour {
 			m_turndown = false;
 			m_turnright = false;
 			m_turndownright = true;
+			m_walking = true;
          } else {
 			 m_turndownright = false;
 		 }
@@ -85,6 +91,7 @@ public class Player : MonoBehaviour {
 			m_turnup = false;
 			m_turnright = false;
 			m_turnupright = true;
+			m_walking = true;
          } else {
 			 m_turnupright = false;
 		 }
@@ -145,6 +152,7 @@ public class Player : MonoBehaviour {
 			Anim.SetBool("Idle", false);
 		} else {
 			Anim.SetBool("Walk", false);
+			Anim.SetBool("Idle", true);
 		}
 	}
 }
