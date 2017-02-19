@@ -21,10 +21,5 @@ public class Workspace : MonoBehaviour {
 			battery.GetComponent<Battery>().RandomPosition();
 			Debug.Log("battery and worspace collide");
 		}
-		Debug.Log(other.gameObject.tag);
-		if( other.gameObject.tag == "PlayerHitbox" || other.gameObject.tag == "Player"  ){	
-			//transform.position = new Vector3(6.76, -2.28, 1.37);
-			Debug.Log("Player and workspace collide");
-		}
 	}
 }

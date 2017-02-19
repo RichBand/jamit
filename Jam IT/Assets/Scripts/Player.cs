@@ -19,6 +19,35 @@ public class Player : MonoBehaviour {
 	public bool m_turndownleft;
 	public bool m_turndownright;
 
+	public float workTimer = 0;
+	private bool working = false;
+	private bool interrupted = false;
+
+	void OnTriggerEnter(Collider other){
+		if( other.gameObject.tag == "WorkspaceHitbox"  ){
+			Debug.Log("addWorking?");
+			working = true;
+		}
+		if( other.gameObject.tag == "Nerd"  ){
+			interrupted = true;
+		}
+	}
+	void OnTriggerExit(Collider other){
+		working = false;
+	}
+	public void addWorkTime (){
+		Debug.Log("addWorking?");
+		if(working && !interrupted){
+			Debug.Log("yes, adding" + workTimer);
+			workTimer += Time.deltaTime;
+			if(workTimer > 3){
+				Debug.Log("you win!");
+
+			}
+		}
+	}
+
+
 	public float playerVelocity = 5f;
 	Vector3 m_rotation = new Vector3();
 	// Use this for initialization
@@ -32,6 +61,7 @@ public class Player : MonoBehaviour {
 		handleInput();
 		handleRotation();
 		handleAnimations();
+		addWorkTime();
 	}
 
 	void FixedUpdate () {
