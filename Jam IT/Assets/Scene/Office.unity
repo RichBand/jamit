@@ -1231,10 +1231,9 @@ GameObject:
   - component: {fileID: 139098037}
   - component: {fileID: 139098038}
   - component: {fileID: 139098039}
-  - component: {fileID: 139098040}
   m_Layer: 10
   m_Name: RightProjectorAssembly
-  m_TagString: RightProjectorAssembly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1253,7 +1252,7 @@ Transform:
   - {fileID: 465113406}
   - {fileID: 835201987}
   m_Father: {fileID: 1180791790}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &139098038
 Animator:
@@ -1286,20 +1285,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectorCharge: 0
   maxBrightness: 0
-  projectorLight: {fileID: 835201988}
-  projectorActivated: 0
---- !u!65 &139098040
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 139098036}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0227344, y: 0.5320531, z: 3.48111}
-  m_Center: {x: 1.0113672, y: -0.5439734, z: 0.013245262}
 --- !u!1 &145925432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,8 +2105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectorCharge: 0
   maxBrightness: 0
-  projectorLight: {fileID: 0}
-  projectorActivated: 0
 --- !u!1 &355198333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3601,10 +3584,9 @@ GameObject:
   - component: {fileID: 649333346}
   - component: {fileID: 649333347}
   - component: {fileID: 649333348}
-  - component: {fileID: 649333349}
   m_Layer: 10
   m_Name: RearProjectorAssembly
-  m_TagString: RearProjectorAssembly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3656,20 +3638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectorCharge: 0
   maxBrightness: 0
-  projectorLight: {fileID: 249038056}
-  projectorActivated: 0
---- !u!65 &649333349
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 649333345}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.1082163, y: 0.5594943, z: 3.4521897}
-  m_Center: {x: 0.81403476, y: -1.0332069, z: 1.2260953}
 --- !u!1 &691553977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6501,10 +6469,9 @@ GameObject:
   - component: {fileID: 1285147557}
   - component: {fileID: 1285147558}
   - component: {fileID: 1285147559}
-  - component: {fileID: 1285147560}
   m_Layer: 10
   m_Name: LeftProjectorAssembly
-  m_TagString: LeftProjectorAssembly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6556,20 +6523,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectorCharge: 0
   maxBrightness: 0
-  projectorLight: {fileID: 347446444}
-  projectorActivated: 0
---- !u!65 &1285147560
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1285147556}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5077085, y: 0.5773836, z: 3.7017164}
-  m_Center: {x: -1.2538553, y: -0.5213081, z: 0.06337929}
 --- !u!1 &1299843366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6719,7 +6672,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1324597565}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.31, y: -1.934, z: 9.5}
+  m_LocalPosition: {x: 3.31, y: -2.36, z: 9.28}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 2030827780}
@@ -6744,7 +6697,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 6.28
+  m_BaseOffset: 4
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1324597568
@@ -6765,13 +6718,8 @@ MonoBehaviour:
   nerdSpeed: 0
   angryNerdSpeed: 5000
   angryNerdTurningSpeed: 250
-  nerdFollowingPlayer: 1
   nerdAngry: 0
   nerdInterested: 0
-  nerdWatchingMovie: 0
-  nerdWatchingMovieOnRight: 0
-  nerdWatchingMovieOnLeft: 0
-  nerdWatchingMovieOnRear: 0
 --- !u!54 &1324597569
 Rigidbody:
   m_ObjectHideFlags: 0
