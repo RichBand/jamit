@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 	private Rigidbody m_rb;
@@ -29,7 +30,14 @@ public class Player : MonoBehaviour {
 			working = true;
 		}
 		if( other.gameObject.tag == "Nerd"  ){
+			Debug.Log("Nerdizise");
 			interrupted = true;
+		}
+		if( other.gameObject.tag == "BatteryHitbox"  ){
+			Debug.Log("Charging");
+			GameObject LaserDot = GameObject.FindGameObjectWithTag("LaserDot");
+			LaserDot.GetComponent<LaserDotController>().batteryLevel = 100;
+			Debug.Log(LaserDot.GetComponent<LaserDotController>().batteryLevel);
 		}
 	}
 	void OnTriggerExit(Collider other){
@@ -40,11 +48,12 @@ public class Player : MonoBehaviour {
 		if(working && !interrupted){
 			Debug.Log("yes, adding" + workTimer);
 			workTimer += Time.deltaTime;
-			if(workTimer > 3){
+			if(workTimer > 1){
 				Debug.Log("you win!");
-
+				SceneManager.LoadScene("Victory");
 			}
 		}
+		
 	}
 
 
@@ -62,6 +71,9 @@ public class Player : MonoBehaviour {
 		handleRotation();
 		handleAnimations();
 		addWorkTime();
+		if(interrupted){
+			SceneManager.LoadScene("GameOver");
+		}
 	}
 
 	void FixedUpdate () {
