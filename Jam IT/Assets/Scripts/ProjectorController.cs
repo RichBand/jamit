@@ -9,6 +9,7 @@ public float projectorCharge;
 public float maxBrightness;
 public Light projectorLight;
 public bool projectorActivated = false;
+private float projectorDuration = 10.0f;
 
 
 
@@ -30,6 +31,15 @@ public bool projectorActivated = false;
 			projectorActivated = true;
 
 		}
+		if(projectorActivated == true) {
+			projectorDuration -= Time.deltaTime;
+			Debug.Log(projectorDuration);
+			if ( projectorDuration < 0 ) {
+					projectorActivated = false;
+					projectorCharge = 0f;
+				}
+		}
+		
 		
 	}
 }
