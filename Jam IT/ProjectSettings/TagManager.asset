@@ -12,6 +12,12 @@ TagManager:
   - LaserImpact
   - Projector
   - ProjectorScreen
+  - RightProjector
+  - LeftProjector
+  - RearProjector
+  - RightProjectorAssembly
+  - LeftProjectorAssembly
+  - RearProjectorAssembly
   layers:
   - Default
   - TransparentFX
