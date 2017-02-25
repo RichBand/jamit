@@ -172,7 +172,6 @@ GameObject:
   - component: {fileID: 95459356026652586}
   - component: {fileID: 54960385227106540}
   - component: {fileID: 136001764823995546}
-  - component: {fileID: 111305854398271470}
   - component: {fileID: 114519351902916654}
   m_Layer: 0
   m_Name: Character
@@ -1388,8 +1387,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1215176564958546}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.59, y: -2.55, z: 3.39}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.59, y: 0.45000005, z: -3.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4086402403465828}
@@ -1649,7 +1648,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0276330981bc54ec89a4ea09aefce524, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1706,24 +1705,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &111305854398271470
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1215176564958546}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400002, guid: 5e8ea0c1b7edcf748b106851bbd54bb0, type: 3}
-  - {fileID: 7400002, guid: dd8bf5acbb0e2554a9680fe89c6db6e6, type: 3}
-  - {fileID: 7400004, guid: 939b066ca6f92d5468bd01d767994b07, type: 3}
-  - {fileID: 7400000, guid: 7d1cd213f0a8ad44499c3346fca5172d, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114519351902916654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1750,7 +1731,7 @@ MonoBehaviour:
   m_turndownleft: 0
   m_turndownright: 0
   workTimer: 0
-  playerVelocity: 1
+  playerVelocity: 4
 --- !u!114 &114742365011273372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1866,7 +1847,7 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1215176564958546}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 97a49f479f9964e779435467cd45cc19, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5

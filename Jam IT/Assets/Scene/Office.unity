@@ -1757,6 +1757,17 @@ Prefab:
       propertyPath: m_turnright
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 136001764823995546, guid: dc2c2ef4de9f748808ac9a5308fda0a8,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136001764823995546, guid: dc2c2ef4de9f748808ac9a5308fda0a8,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 97a49f479f9964e779435467cd45cc19,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 111305854398271470, guid: dc2c2ef4de9f748808ac9a5308fda0a8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: dc2c2ef4de9f748808ac9a5308fda0a8, type: 2}
@@ -7487,7 +7498,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1950857033}
   serializedVersion: 5
   lengthInSec: 5
-  speed: 1
+  simulationSpeed: 1
   looping: 1
   prewarm: 0
   playOnAwake: 1
