@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Nerd : MonoBehaviour {
 
+    public Material[] Skin;
+    public SkinnedMeshRenderer Renderer;
 	 public Transform goal;
      public Transform laserPosition;
      public Transform playerPosition;
@@ -39,6 +41,11 @@ public class Nerd : MonoBehaviour {
             RearProjectorPosition = RearProjectorAssembly.transform;
             laserPosition = laserDot.transform;
             goal = playerPosition;
+
+            // Assign random skin
+            this.Renderer.sharedMaterials[0] = Skin[Random.Range(0, Skin.Length)];
+
+            agent.updateRotation = true;
         }
        void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "LaserDot" &&  laserDot.GetComponent<LaserDotController>().laserActivated == true) {
@@ -69,10 +76,11 @@ public class Nerd : MonoBehaviour {
         }
        }
        void Update () {
-           transform.eulerAngles= new Vector3(0,0,0);
+           //transform.eulerAngles= new Vector3(0,0,0);
            WhatToDo();
            agent.SetDestination(goal.position);
-            
+           
+           
        }
        private void WhatToDo () {
             if (nerdWatchingMovie) {
