@@ -59,7 +59,7 @@ public class GameOverScript : MonoBehaviour {
 			}
 			else if(InBox(Input.mousePosition, backButton.GetComponent<GUITexture>().pixelInset)){
 				loading.GetComponent<GUITexture>().pixelInset = new Rect(0,0,Screen.width,Screen.height);
-                SceneManager.LoadScene("Splash");
+                Application.Quit();
 			}
 		}
 		
