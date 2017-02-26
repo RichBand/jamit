@@ -51,7 +51,7 @@ public class VictoryScript : MonoBehaviour {
 		tempR.width = Screen.height * 3;
 		tempR.x = Screen.width/2 - tempR.width/2;
 			
-		//scene.GetComponent<GUITexture>().pixelInset = tempR;
+		scene.GetComponent<GUITexture>().pixelInset = tempR;
 		
 	}
 }

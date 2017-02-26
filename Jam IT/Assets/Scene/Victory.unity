@@ -200,7 +200,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d2a172106c1a3d84b9e0ec122a7e9da2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d1cd52a69eaf09449b1c2d12a4722524, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -258,7 +258,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -294,7 +294,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1816540996}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 9f27c7726b0aa754881fb2aa8f42070b, type: 3}
+  m_Texture: {fileID: 2800000, guid: af3bfd6f239fced489271b1b1e88a8fd, type: 3}
   m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_PixelInset:
     serializedVersion: 2
