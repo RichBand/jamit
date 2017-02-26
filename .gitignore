@@ -1,3 +1,5 @@
 *.DS_Store
 /cmake-build-debug/
 Assembly-CSharp.csproj
+Jam IT.sln
+Assembly-CSharp-Editor.csproj
