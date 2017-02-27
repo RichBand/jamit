@@ -67,6 +67,9 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		m_walking  = false;
+
 		handleInput();
 		handleRotation();
 		handleAnimations();
@@ -80,12 +83,13 @@ public class Player : MonoBehaviour {
 		handleMovement();
 	}
 	private void handleInput () {
+
+		
 		if(Input.GetKey(KeyCode.W)) {
 			m_turnup = true;
 			m_walking = true;
          } else {
 			 m_turnup = false;
-			 m_walking = false;
 		 }
 		 if(Input.GetKey(KeyCode.S)) {
 			m_turndown = true;
