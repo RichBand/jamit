@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour {
 	private Rigidbody m_rb;
 	public Animator Anim;
-	public bool m_moveUp;
+    public Transform LaserPointerTip;
+    public bool m_moveUp;
 	public bool m_walking = false;
 	public bool m_moveDown;
 	public bool m_moveRight;

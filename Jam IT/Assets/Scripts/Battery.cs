@@ -6,7 +6,6 @@ public class Battery : MonoBehaviour {
 	public GameObject center;
 	public Vector3 size;
 	public float hoverHeight = 0.2f;
-	public GameObject BatteryPrefab;
 
 	// Use this for initialization
 	void Start () {
