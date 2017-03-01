@@ -2021,6 +2021,7 @@ GameObject:
   - component: {fileID: 476383824}
   - component: {fileID: 476383823}
   - component: {fileID: 476383822}
+  - component: {fileID: 476383825}
   m_Layer: 0
   m_Name: WorkspaceHitbox
   m_TagString: WorkspaceHitbox
@@ -2081,6 +2082,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476383821}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &476383825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476383821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00115c5a41b314d449242f5f0c961044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &483702743
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,7 +5530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1389771290
 Transform:
   m_ObjectHideFlags: 0
@@ -11250,6 +11262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958574899}
   - component: {fileID: 1958574900}
+  - component: {fileID: 1958574901}
   m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
@@ -11290,6 +11303,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!64 &1958574901
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1958574898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
 --- !u!1001 &1966368192
 Prefab:
   m_ObjectHideFlags: 0
