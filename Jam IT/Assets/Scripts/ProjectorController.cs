@@ -37,6 +37,7 @@ private float projectorDuration = 10.0f;
 			if ( projectorDuration < 0 ) {
 					projectorActivated = false;
 					projectorCharge = 0f;
+				Debug.Log("Projector off!");
 				}
 		}
 		
