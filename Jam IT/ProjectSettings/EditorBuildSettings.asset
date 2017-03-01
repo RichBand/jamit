@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Splash.unity
+    path: Assets/_Scenes/000_Splash.unity
   - enabled: 1
-    path: Assets/Scene/Office.unity
+    path: Assets/_Scenes/001_Gameplay.unity
   - enabled: 1
-    path: Assets/Scene/Victory.unity
+    path: Assets/_Scenes/002_GameOver.unity
   - enabled: 1
-    path: Assets/Scene/GameOver.unity
+    path: Assets/_Scenes/003_Victory.unity

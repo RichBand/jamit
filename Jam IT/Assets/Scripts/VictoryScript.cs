@@ -36,7 +36,7 @@ public class VictoryScript : MonoBehaviour {
 	void Update () {
 		if(!Input.GetMouseButton(0) && mouseState){
 			PlayerPrefs.SetFloat("songTime", GetComponent<AudioSource>().time);
-            SceneManager.LoadScene("Splash");
+            SceneManager.LoadScene("000_Splash");
 		}
 		
 		if(Input.GetMouseButton(0)){

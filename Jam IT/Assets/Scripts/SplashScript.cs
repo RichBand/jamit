@@ -38,7 +38,7 @@ public class SplashScript : MonoBehaviour {
 	void Update () {
 		if(!Input.GetMouseButton(0) && mouseState){
 			PlayerPrefs.SetFloat("songTime", GetComponent<AudioSource>().time);
-            SceneManager.LoadScene("Office");
+            SceneManager.LoadScene("001_Gameplay");
 		}
 		
 		if(Input.GetMouseButton(0)){

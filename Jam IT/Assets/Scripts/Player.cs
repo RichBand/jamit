@@ -54,7 +54,7 @@ public class Player : MonoBehaviour {
 			
 			workTimer += Time.deltaTime;
 			if(workTimer > 1){
-				SceneManager.LoadScene("Victory");
+				SceneManager.LoadScene("003_Victory");
 			}
 		}
 		
@@ -83,7 +83,7 @@ public class Player : MonoBehaviour {
 	}
 	void checkLifes(){
 		if(life < 1){
-			SceneManager.LoadScene("GameOver");	
+			SceneManager.LoadScene("002_GameOver");	
 		}
 	}
 
