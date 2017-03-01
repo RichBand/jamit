@@ -31,7 +31,6 @@ public class LaserDotController : MonoBehaviour {
 			laserImpactObject.active = true;
 			laserBeamObject.GetComponent<Renderer>().enabled = true;
 			batteryLevel--;
-			Debug.Log("Battery Level: " + batteryLevel);
 			
 		}
 		else {

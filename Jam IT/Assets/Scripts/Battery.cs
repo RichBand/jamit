@@ -7,9 +7,14 @@ public class Battery : MonoBehaviour {
 	public Vector3 size;
 	public float hoverHeight = 0.2f;
 
-	// Use this for initialization
-	void Start () {
-	}
+    public int Amount = 60;
+
+    LaserDotController _laserController;
+
+    // Use this for initialization
+    void Start () {
+        _laserController = GameObject.FindGameObjectWithTag("LaserDot").GetComponent<LaserDotController>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,11 +26,11 @@ public class Battery : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if( other.gameObject.tag == "Player"  ){
 			HiddenPosition();
-			Invoke( "RandomPosition" , 3f );
+            _laserController.batteryLevel += Amount;
+            Invoke( "RandomPosition" , 3f );
 		}
 		if( other.gameObject.tag == "LaserDot"  ){
-			GameObject laserDot = GameObject.FindGameObjectWithTag("LaserDot");
-			if (laserDot.GetComponent<LaserDotController> ().laserActivated == true) {
+			if (_laserController.laserActivated == true) {
 				Debug.Log ("battery burned!");
 				HiddenPosition();
 				Invoke( "RandomPosition" , 6f );		

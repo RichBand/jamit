@@ -28,32 +28,32 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if( other.gameObject.tag == "WorkspaceHitbox"  ){
-			Debug.Log("addWorking?");
+			
 			working = true;
 		}
 		if( other.gameObject.tag == "Nerd"  ){
-			Debug.Log("Nerdizise");
+			
 			interrupted = true;
 			life--;
-			Debug.Log("Nerdizise: " + life);
+			
 		}
 		if( other.gameObject.tag == "BatteryHitbox" || other.gameObject.tag == "Battery"  ){
-			Debug.Log("Charging");
+			
 			GameObject LaserDot = GameObject.FindGameObjectWithTag("LaserDot");
 			LaserDot.GetComponent<LaserDotController>().batteryLevel = 100;
-			Debug.Log("BATTERY LEVEL: "+LaserDot.GetComponent<LaserDotController>().batteryLevel);
+			
 		}
 	}
 	void OnTriggerExit(Collider other){
 		working = false;
 	}
 	public void addWorkTime (){
-		Debug.Log("addWorking?");
+
+		// TODO: Add addWorking
 		if(working && !interrupted){
-			Debug.Log("yes, adding" + workTimer);
+			
 			workTimer += Time.deltaTime;
 			if(workTimer > 1){
-				Debug.Log("you win!");
 				SceneManager.LoadScene("Victory");
 			}
 		}
