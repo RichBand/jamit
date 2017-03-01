@@ -18,15 +18,15 @@ public class Nerd : MonoBehaviour {
      GameObject LeftProjectorAssembly;
      GameObject RearProjectorAssembly;
      public int nerdSpeed;
-     public int angryNerdSpeed = 5000;
+     public int angryNerdSpeed = 8;
      public int angryNerdTurningSpeed = 100;
      public bool nerdFollowingPlayer = true;
-     public bool nerdAngry = false;
-     public bool nerdInterested = false;
-     public bool nerdWatchingMovie = false;
-     public bool nerdWatchingMovieOnRight = false;
-     public bool nerdWatchingMovieOnLeft = false;
-     public bool nerdWatchingMovieOnRear = false;
+     public bool laserActivated = false;
+	 public bool projectorActivated = false;
+	public bool onRightProjectorPerimeter = false;
+	public bool onLeftProjectorPerimeter = false;
+	public bool onRearProjectorPerimeter = false;
+	private float angryDuration = 10.0f;
 
      UnityEngine.AI.NavMeshAgent agent;
        void Start () {
@@ -48,57 +48,91 @@ public class Nerd : MonoBehaviour {
             agent.updateRotation = true;
         }
        void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == "LaserDot" &&  laserDot.GetComponent<LaserDotController>().laserActivated == true) {
-            Debug.Log("NERD ANGRY!");
-            nerdAngry = true;
-            this.agent.speed = angryNerdSpeed;
-            this.agent.angularSpeed = angryNerdTurningSpeed;
-            goal = playerPosition;
-        }
-        else if(other.gameObject.tag == "LaserRange" && nerdAngry == false && laserDot.GetComponent<LaserDotController>().laserActivated == true) {
-            Debug.Log("Nerd Interested");
-            nerdInterested = true;
-        }
-        else if (other.gameObject.tag == "RightProjectorAssembly" && nerdAngry == false && RightProjectorAssembly.GetComponent<ProjectorController>().projectorActivated == true) {
-            Debug.Log("Ooooh, movie!");
-            nerdWatchingMovie = true;
-            nerdWatchingMovieOnRight = true;
-        }
-        else if (other.gameObject.tag == "LeftProjectorAssembly" && nerdAngry == false && LeftProjectorAssembly.GetComponent<ProjectorController>().projectorActivated == true) {
-            Debug.Log("Ooooh, movie!");
-            nerdWatchingMovie = true;
-            nerdWatchingMovieOnLeft = true;
-        }
-        else if (other.gameObject.tag == "RearProjectorAssembly" && nerdAngry == false && RearProjectorAssembly.GetComponent<ProjectorController>().projectorActivated == true) {
-            Debug.Log("Ooooh, movie!");
-            nerdWatchingMovie = true;
-            nerdWatchingMovieOnRear = true;
-        }
+		activateGoal (other);
+		if (other.gameObject.tag == "LaserDot") {
+			StartNerdRage(laserDot.GetComponent<LaserDotController> ().laserActivated); 
+		}
        }
-       void Update () {
-           //transform.eulerAngles= new Vector3(0,0,0);
-           WhatToDo();
-           agent.SetDestination(goal.position);
-           
-           
-       }
-       private void WhatToDo () {
-            if (nerdWatchingMovie) {
-                if (nerdWatchingMovieOnRight == true) {
-                goal = RightProjectorPosition;
-                }
-                if (nerdWatchingMovieOnLeft == true) {
-                goal = LeftProjectorPosition;
-                }
-                if (nerdWatchingMovieOnRear == true) {
-                goal = RearProjectorPosition;
-                }
-           }
-            else if (nerdInterested == true && laserDot.GetComponent<LaserDotController>().laserActivated == true) {
-                goal = laserPosition;
-            }
-            else {
-               goal = playerPosition;
-           }
-       }
+	private void activateGoal(Collider other){
+		//if eddison
+		if (other.gameObject.tag == "RightProjectorAssembly") {
+			onRightProjectorPerimeter = true;
+		} else if (other.gameObject.tag == "LeftProjectorAssembly") {
+			onLeftProjectorPerimeter = true;
+			return;
+		} else if (other.gameObject.tag == "RearProjectorAssembly") {
+			onRearProjectorPerimeter = true;
+			return;
+		}
+	}
+	private Transform setGoal(){
+
+		//if eddison
+		GameObject watson = GameObject.FindGameObjectWithTag("Watson");
+		if (watson != null) {
+			Debug.Log ("neerd Looking for watson");
+			return watson.transform;
+		}
+		if (laserActivated && laserDot.GetComponent<LaserDotController> ().laserActivated) {
+			Debug.Log ("Following laser");
+			return laserPosition;
+		} else if (onRightProjectorPerimeter && RightProjectorAssembly.GetComponent<ProjectorController> ().projectorActivated == true) {
+			Debug.Log ("RightProjectorAssembly");
+			return RightProjectorPosition;
+		} else if (onLeftProjectorPerimeter && LeftProjectorAssembly.GetComponent<ProjectorController> ().projectorActivated == true) {
+			Debug.Log ("LeftProjectorAssembly");
+			return LeftProjectorPosition;
+
+		} else if (onRearProjectorPerimeter && RearProjectorAssembly.GetComponent<ProjectorController> ().projectorActivated == true) {
+			Debug.Log ("RearProjectorAssembly");
+			return RearProjectorPosition;
+		}
+		else {
+			return playerPosition;
+		}
+		
+	}
+	public void setNerdAngry(bool angry = false){
+
+		
+	}
+   void Update () {
+		goal = setGoal();
+		agent.SetDestination (goal.position);
+   }
+	float _nerdRageTimer;
+	void StartNerdRage(bool angry)
+	{
+		// Reset timer
+		_nerdRageTimer = 4f;
+		// Stop existing (removes from stack)
+		StopCoroutine("NerdRageRoutine");
+		// Add a new copy back
+		StartCoroutine(NerdRageRoutine(angry));
+	}
+
+	IEnumerator NerdRageRoutine(bool angry = false)
+	{
+		while(_nerdRageTimer >= 0) {
+			// Subtrace frame time
+			_nerdRageTimer -= Time.deltaTime;
+
+			// This sends back the iterator (non blocking)
+			yield return new WaitForEndOfFrame();
+		}
+
+		if (angry) {
+			Debug.Log ("NERD ANGRY!");
+			this.agent.speed = angryNerdSpeed;
+			this.agent.angularSpeed = angryNerdTurningSpeed;
+			//Invoke ("this.setNerdAngry", 4f);
+			angryDuration = 10.0f;
+		} else {
+			Debug.Log ("NERD calm!");
+			this.agent.speed = 1;
+			this.agent.angularSpeed = 10;
+
+		}
+	}
+   
 }

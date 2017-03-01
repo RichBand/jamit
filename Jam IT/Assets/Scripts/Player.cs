@@ -23,6 +23,7 @@ public class Player : MonoBehaviour {
 	public float workTimer = 0;
 	private bool working = false;
 	private bool interrupted = false;
+	public int life = 100;
 
 	void OnTriggerEnter(Collider other){
 		if( other.gameObject.tag == "WorkspaceHitbox"  ){
@@ -32,8 +33,10 @@ public class Player : MonoBehaviour {
 		if( other.gameObject.tag == "Nerd"  ){
 			Debug.Log("Nerdizise");
 			interrupted = true;
+			life--;
+			Debug.Log("Nerdizise: " + life);
 		}
-		if( other.gameObject.tag == "BatteryHitbox"  ){
+		if( other.gameObject.tag == "BatteryHitbox" || other.gameObject.tag == "Battery"  ){
 			Debug.Log("Charging");
 			GameObject LaserDot = GameObject.FindGameObjectWithTag("LaserDot");
 			LaserDot.GetComponent<LaserDotController>().batteryLevel = 100;
@@ -74,8 +77,12 @@ public class Player : MonoBehaviour {
 		handleRotation();
 		handleAnimations();
 		addWorkTime();
-		if(interrupted){
-			SceneManager.LoadScene("GameOver");
+		checkLifes ();
+
+	}
+	void checkLifes(){
+		if(life < 1){
+			SceneManager.LoadScene("GameOver");	
 		}
 	}
 
