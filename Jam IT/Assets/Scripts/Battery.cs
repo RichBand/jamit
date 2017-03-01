@@ -5,11 +5,11 @@ using UnityEngine;
 public class Battery : MonoBehaviour {
 	public GameObject center;
 	public Vector3 size;
-	public float hoverHeight = 1f;
+	public float hoverHeight = 0.2f;
 	public GameObject BatteryPrefab;
 
 	// Use this for initialization
-	void Start () {	
+	void Start () {
 	}
 	
 	// Update is called once per frame
@@ -22,12 +22,15 @@ public class Battery : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if( other.gameObject.tag == "Player"  ){
 			HiddenPosition();
-			Invoke( "RandomPosition" , 3f );		
+			Invoke( "RandomPosition" , 3f );
 		}
 		if( other.gameObject.tag == "LaserDot"  ){
-			Debug.Log ("battery burned!");
-			HiddenPosition();
-			Invoke( "RandomPosition" , 6f );		
+			GameObject laserDot = GameObject.FindGameObjectWithTag("LaserDot");
+			if (laserDot.GetComponent<LaserDotController> ().laserActivated == true) {
+				Debug.Log ("battery burned!");
+				HiddenPosition();
+				Invoke( "RandomPosition" , 6f );		
+			}
 		}
 	}
 	public void RandomPosition(){
