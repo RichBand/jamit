@@ -11,7 +11,7 @@ public class UIWorkTimer : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 		if (!string.Equals(PlayerController.workTimer.ToString(), Output.text)) {
-			Output.text = PlayerController.workTimer.ToString();
+			Output.text = PlayerController.workTimer.ToString("0.0");
 		}
     }
 }

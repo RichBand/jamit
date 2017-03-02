@@ -31,8 +31,8 @@ public class Watson : MonoBehaviour {
 			Debug.Log ("random");
 			float x = center.transform.position.x + (Random.Range(-size.x / 2, size.x / 2 ));
 			float z = center.transform.position.z + (Random.Range(-size.z / 2, size.z / 2 ));
-			transform.position = new Vector3(x, center.transform.position.y, z);
-			Debug.Log (x + ", " + z + " ->" + transform.position);
+			transform.position = new Vector3(x, transform.position.y, z);
+			//Debug.Log (x + ", " + z + " ->" + transform.position);
 		} else {
 			Debug.Log ("Center empty for watson");
 		}

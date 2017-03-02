@@ -33,14 +33,11 @@ private float projectorDuration = 10.0f;
 		}
 		if(projectorActivated == true) {
 			projectorDuration -= Time.deltaTime;
-			Debug.Log(projectorDuration);
 			if ( projectorDuration < 0 ) {
 					projectorActivated = false;
 					projectorCharge = 0f;
 				Debug.Log("Projector off!");
-				}
+			}
 		}
-		
-		
 	}
 }

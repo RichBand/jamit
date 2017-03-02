@@ -26,7 +26,7 @@ public class Nerd : MonoBehaviour {
 	public bool onRightProjectorPerimeter = false;
 	public bool onLeftProjectorPerimeter = false;
 	public bool onRearProjectorPerimeter = false;
-	private float angryDuration = 10.0f;
+	private float angryDuration = 5.0f;
 
      UnityEngine.AI.NavMeshAgent agent;
        void Start () {
@@ -125,8 +125,7 @@ public class Nerd : MonoBehaviour {
 			Debug.Log ("NERD ANGRY!");
 			this.agent.speed = angryNerdSpeed;
 			this.agent.angularSpeed = angryNerdTurningSpeed;
-			//Invoke ("this.setNerdAngry", 4f);
-			angryDuration = 10.0f;
+			angryDuration = 5.0f;
 		} else {
 			Debug.Log ("NERD calm!");
 			this.agent.speed = 1;

@@ -40,11 +40,10 @@ public class Battery : MonoBehaviour {
 	public void RandomPosition(){
 		gameObject.SetActive(true);
 		if (center != null) {
-			Debug.Log ("random");
 			float x = center.transform.position.x + (Random.Range(-size.x / 2, size.x / 2 ));
 			float z = center.transform.position.z + (Random.Range(-size.z / 2, size.z / 2 ));
 			transform.position = new Vector3(x, center.transform.position.y + 1, z);
-			Debug.Log (x + ", " + z + " ->" + transform.position);
+			//Debug.Log (x + ", " + z + " ->" + transform.position);
 		} else {
 			Debug.Log ("bad stuff");
 		}

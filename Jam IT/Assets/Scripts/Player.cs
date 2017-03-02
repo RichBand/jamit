@@ -22,9 +22,11 @@ public class Player : MonoBehaviour {
 	public bool m_turndownright;
 
 	public float workTimer = 0;
+	public float workTimerGoal = 15;
+
 	private bool working = false;
 	private bool interrupted = false;
-	public int life = 100;
+	public int healt = 100;
 
 	void OnTriggerEnter(Collider other){
 		if( other.gameObject.tag == "WorkspaceHitbox"  ){
@@ -32,9 +34,8 @@ public class Player : MonoBehaviour {
 			working = true;
 		}
 		if( other.gameObject.tag == "Nerd"  ){
-			
 			interrupted = true;
-			life--;
+			healt--;
 			
 		}
 		if( other.gameObject.tag == "BatteryHitbox" || other.gameObject.tag == "Battery"  ){
@@ -43,9 +44,25 @@ public class Player : MonoBehaviour {
 			LaserDot.GetComponent<LaserDotController>().batteryLevel = 100;
 			
 		}
+		if( other.gameObject.tag == "Watson" && !interrupted){
+			healt += 20;
+			if (healt > 100) {
+				healt = 100;
+			}
+			Debug.Log("more healt:" + healt);
+
+		}
 	}
 	void OnTriggerExit(Collider other){
-		working = false;
+		if( other.gameObject.tag == "WorkspaceHitbox"  ){
+			working = false;
+			Debug.Log("work Stoped");
+		}
+		if( other.gameObject.tag == "Nerd"  ){
+			interrupted = false;
+			Debug.Log("interruption Stoped");
+		}
+
 	}
 	public void addWorkTime (){
 
@@ -53,7 +70,7 @@ public class Player : MonoBehaviour {
 		if(working && !interrupted){
 			
 			workTimer += Time.deltaTime;
-			if(workTimer > 1){
+			if(workTimer > workTimerGoal){
 				SceneManager.LoadScene("003_Victory");
 			}
 		}
@@ -82,7 +99,7 @@ public class Player : MonoBehaviour {
 
 	}
 	void checkLifes(){
-		if(life < 1){
+		if(healt < 1){
 			SceneManager.LoadScene("002_GameOver");	
 		}
 	}

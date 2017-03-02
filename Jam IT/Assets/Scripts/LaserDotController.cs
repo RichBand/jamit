@@ -11,7 +11,9 @@ public class LaserDotController : MonoBehaviour {
 	GameObject playerObject;
 	GameObject laserBeamObject;
 	GameObject laserImpactObject;
+	public GameObject laserDot;
 	public Vector3 lastPosition = Vector3.zero;
+	private bool UICollision = false;
 	// Use this for initialization
 	void Start () {
 		//Cursor.lockState = CursorLockMode.Locked;
@@ -21,15 +23,17 @@ public class LaserDotController : MonoBehaviour {
 		playerObject = GameObject.FindGameObjectWithTag("Player");
 		laserBeamObject = GameObject.FindGameObjectWithTag("LaserBeam");
 		laserImpactObject = GameObject.FindGameObjectWithTag("LaserImpact");
+		laserDot.GetComponent<AudioSource> ().mute = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButton(0) && batteryLevel >= 0)
+		if (!UICollision && Input.GetMouseButton(0) && batteryLevel >= 0)
 		{
 			laserActivated = true;
 			laserImpactObject.active = true;
 			laserBeamObject.GetComponent<Renderer>().enabled = true;
+			laserDot.GetComponent<AudioSource> ().mute = false;
 			batteryLevel--;
 			
 		}
@@ -37,6 +41,7 @@ public class LaserDotController : MonoBehaviour {
 			laserActivated = false;
 			laserImpactObject.active = false;
 			laserBeamObject.GetComponent<Renderer>().enabled = false;
+			laserDot.GetComponent<AudioSource> ().mute = true;
 			
 		}
 		
@@ -67,5 +72,14 @@ public class LaserDotController : MonoBehaviour {
 			this.transform.position = playerPosition + ((worldPoint - playerPosition).normalized * 5);
 		}
 	
+	}
+	void OnTriggerEnter(Collider other){
+		if (other.gameObject.tag == "CanvasElement") {
+			UICollision = true;
+			Debug.Log ("Laser poniter in canvas collsion");
+		}
+		else {
+			UICollision = false;
+		}
 	}
 }

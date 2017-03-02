@@ -15,6 +15,12 @@ TagManager:
   - RightProjectorAssembly
   - LeftProjectorAssembly
   - RearProjectorAssembly
+  - BatteryHitbox
+  - Table
+  - Workspace
+  - WorkspaceHitbox
+  - Watson
+  - CanvasElement
   layers:
   - Default
   - TransparentFX
