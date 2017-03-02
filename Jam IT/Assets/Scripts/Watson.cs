@@ -28,7 +28,6 @@ public class Watson : MonoBehaviour {
 		gameObject.SetActive(true);
 		onSceneDuration = Random.Range(10f, 40.0f);
 		if (center != null) {
-			Debug.Log ("random");
 			float x = center.transform.position.x + (Random.Range(-size.x / 2, size.x / 2 ));
 			float z = center.transform.position.z + (Random.Range(-size.z / 2, size.z / 2 ));
 			transform.position = new Vector3(x, transform.position.y, z);
