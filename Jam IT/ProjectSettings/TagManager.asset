@@ -21,6 +21,7 @@ TagManager:
   - WorkspaceHitbox
   - Watson
   - CanvasElement
+  - Desktop
   layers:
   - Default
   - TransparentFX

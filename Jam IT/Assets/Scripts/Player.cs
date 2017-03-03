@@ -26,7 +26,7 @@ public class Player : MonoBehaviour {
 
 	private bool working = false;
 	private bool interrupted = false;
-	public int healt = 100;
+	public int health = 100;
 
 	void OnTriggerEnter(Collider other){
 		if( other.gameObject.tag == "WorkspaceHitbox"  ){
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour {
 		}
 		if( other.gameObject.tag == "Nerd"  ){
 			interrupted = true;
-			healt--;
+			health--;
 			
 		}
 		if( other.gameObject.tag == "BatteryHitbox" || other.gameObject.tag == "Battery"  ){
@@ -45,11 +45,11 @@ public class Player : MonoBehaviour {
 			
 		}
 		if( other.gameObject.tag == "Watson" && !interrupted){
-			healt += 20;
-			if (healt > 100) {
-				healt = 100;
+			health += 20;
+			if (health > 100) {
+				health = 100;
 			}
-			Debug.Log("more healt:" + healt);
+			Debug.Log("more health:" + health);
 
 		}
 	}
@@ -99,7 +99,7 @@ public class Player : MonoBehaviour {
 
 	}
 	void checkLifes(){
-		if(healt < 1){
+		if(health < 1){
 			SceneManager.LoadScene("002_GameOver");	
 		}
 	}

@@ -36,13 +36,18 @@ public class Battery : MonoBehaviour {
 				Invoke( "RandomPosition" , 6f );		
 			}
 		}
+		if( other.gameObject.tag == "Table" || other.gameObject.tag == "Desktop" || other.gameObject.tag == "Workspace"   ){
+				Debug.Log ("battery collide with " + other.gameObject.tag);
+				//HiddenPosition();
+				//Invoke( "RandomPosition" , 6f );		
+		}
 	}
 	public void RandomPosition(){
 		gameObject.SetActive(true);
 		if (center != null) {
 			float x = center.transform.position.x + (Random.Range(-size.x / 2, size.x / 2 ));
 			float z = center.transform.position.z + (Random.Range(-size.z / 2, size.z / 2 ));
-			transform.position = new Vector3(x, center.transform.position.y + 1, z);
+			transform.position = new Vector3(x, transform.position.y, z);
 			//Debug.Log (x + ", " + z + " ->" + transform.position);
 		} else {
 			Debug.Log ("bad stuff");

@@ -10,6 +10,6 @@ public class UIPlayersLife : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        FillImage.fillAmount = (float)PlayerController.healt / 100f;
+		FillImage.fillAmount = (float)PlayerController.health / 100f;
     }
 }
