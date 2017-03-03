@@ -13,6 +13,7 @@ public class Nerd : MonoBehaviour {
      Transform LeftProjectorPosition;
      Transform RearProjectorPosition;
      GameObject player;
+	 GameObject watson;
      GameObject laserDot;
      GameObject RightProjectorAssembly;
      GameObject LeftProjectorAssembly;
@@ -33,6 +34,7 @@ public class Nerd : MonoBehaviour {
             agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
             playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
             laserDot = GameObject.FindGameObjectWithTag("LaserDot");
+			watson = GameObject.FindGameObjectWithTag("Watson");
             RightProjectorAssembly = GameObject.FindGameObjectWithTag("RightProjectorAssembly");
             LeftProjectorAssembly = GameObject.FindGameObjectWithTag("LeftProjectorAssembly");
             RearProjectorAssembly = GameObject.FindGameObjectWithTag("RearProjectorAssembly");
@@ -68,8 +70,8 @@ public class Nerd : MonoBehaviour {
 	private Transform setGoal(){
 
 		//if eddison
-		GameObject watson = GameObject.FindGameObjectWithTag("Watson");
-		if (watson != null) {
+
+		if (watson.GetComponent<Watson> ().isActive == true) {
 			Debug.Log ("neerd Looking for watson");
 			return watson.transform;
 		}

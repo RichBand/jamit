@@ -22,11 +22,12 @@ public class Player : MonoBehaviour {
 	public bool m_turndownright;
 
 	public float workTimer = 0;
-	public float workTimerGoal = 15;
+	public float workTimerGoal = 10;
 
 	private bool working = false;
 	private bool interrupted = false;
-	public int healt = 100;
+	public int health = 100;
+	GameObject watson;
 
 	void OnTriggerEnter(Collider other){
 		if( other.gameObject.tag == "WorkspaceHitbox"  ){
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour {
 		}
 		if( other.gameObject.tag == "Nerd"  ){
 			interrupted = true;
-			healt--;
+			health--;
 			
 		}
 		if( other.gameObject.tag == "BatteryHitbox" || other.gameObject.tag == "Battery"  ){
@@ -45,11 +46,19 @@ public class Player : MonoBehaviour {
 			
 		}
 		if( other.gameObject.tag == "Watson" && !interrupted){
-			healt += 20;
-			if (healt > 100) {
-				healt = 100;
+			if (watson.GetComponent<Watson> ().isActive == true) {
+				health += 20;
+				if (health > 100) {
+					health = 100;
+				}
+			} else {
+				health += 1;
+				if (health > 100) {
+					health = 100;
+				}
 			}
-			Debug.Log("more healt:" + healt);
+
+			Debug.Log("more health:" + health);
 
 		}
 	}
@@ -68,7 +77,6 @@ public class Player : MonoBehaviour {
 
 		// TODO: Add addWorking
 		if(working && !interrupted){
-			
 			workTimer += Time.deltaTime;
 			if(workTimer > workTimerGoal){
 				SceneManager.LoadScene("003_Victory");
@@ -84,6 +92,7 @@ public class Player : MonoBehaviour {
 	void Start () {
 		m_rb = GetComponent<Rigidbody>();
 		Anim = GetComponent<Animator>();
+		watson = GameObject.FindGameObjectWithTag("Watson");
 	}
 	
 	// Update is called once per frame
@@ -95,11 +104,12 @@ public class Player : MonoBehaviour {
 		handleRotation();
 		handleAnimations();
 		addWorkTime();
-		checkLifes ();
+		checkHealth ();
 
 	}
-	void checkLifes(){
-		if(healt < 1){
+	void checkHealth(){
+
+		if(health < 1){
 			SceneManager.LoadScene("002_GameOver");	
 		}
 	}

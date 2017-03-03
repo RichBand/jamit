@@ -3,39 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Watson : MonoBehaviour {
-	private float onSceneDuration = 0f;
+	private float timeActive = 0f;
+	private readonly float timeActiveFinal = 50f;
 	public GameObject center;
 	public Vector3 size;
+	public bool isActive = false ;
+	private Vector3 startPosition;
 
 	// Use this for initialization
 	void Start () {
-		onSceneDuration = Random.Range(10f, 40.0f);
+		timeActive = timeActiveFinal;
+		//gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		checkSceneTimer ();	
+		if (isActive) {
+			checkSceneTimer ();
+			Debug.Log ("check ");
+		}
+		Debug.Log ("isActive: " + isActive);
 	}
 	public void checkSceneTimer(){
-		
-		onSceneDuration--;
-		if (onSceneDuration < 0) {
-			gameObject.SetActive(false);
-			Invoke( "RandomPosition" , Random.Range(0f, 5.0f) );		
+		if (timeActive == timeActiveFinal) {
+			Debug.Log("watson was initialized");
+			transform.position = getRandomPosition ();
+			UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+			agent.SetDestination(getRandomPosition());
+			
+		}
+
+		timeActive--;
+
+		if (timeActive < 0) {
+			isActive = false;
+			timeActive = timeActiveFinal;
+			Debug.Log("watson inactive");
 		}
 	}
-	public void RandomPosition(){
-		gameObject.SetActive(true);
-		onSceneDuration = Random.Range(10f, 40.0f);
-		if (center != null) {
-			Debug.Log ("random");
-			float x = center.transform.position.x + (Random.Range(-size.x / 2, size.x / 2 ));
-			float z = center.transform.position.z + (Random.Range(-size.z / 2, size.z / 2 ));
-			transform.position = new Vector3(x, transform.position.y, z);
-			//Debug.Log (x + ", " + z + " ->" + transform.position);
-		} else {
-			Debug.Log ("Center empty for watson");
-		}
+	//onSceneDuration = onSceneDurationFinal;
+	//gameObject.SetActive(true);
+	public Vector3 getRandomPosition(){
+		float x = center.transform.position.x + (Random.Range(-size.x / 2, size.x / 2 ));
+		float z = center.transform.position.z + (Random.Range(-size.z / 2, size.z / 2 ));
+		return new Vector3(x, transform.position.y, z);
 	}
 
 }
