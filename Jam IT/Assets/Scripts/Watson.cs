@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Watson : MonoBehaviour {
 	private float timeActive = 0f;
-	private readonly float timeActiveFinal = 50f;
+	private readonly float timeActiveFinal = 60f;
 	public GameObject center;
 	public Vector3 size;
 	public bool isActive = false ;
